@@ -1,11 +1,12 @@
 html {
-  background-color: #a2a0a0;
+  background-color: #07011c;
   color: white;
   height: 100%;
   width: 100%;
 }
 
 body {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +34,7 @@ body {
   padding: 4px 4px;
 }
 
-.todo>* {
+.todo > * {
   flex: 1 1 260px;
 }
 
@@ -48,8 +49,9 @@ body {
   margin: 10px 20px;
   padding: 4px 4px;
   border: 2px solid black;
-  color: black;
-  background-color: #523352;
+  background-color: #37235e;
+  color: white;
+  box-shadow: 0px 0px 3px 2px #3d0be1;
 }
 
 label {
@@ -61,8 +63,11 @@ label {
 
 input,
 textarea {
+  text-transform: capitalize;
   display: block;
-  background-color: #a4bbbb;
+  color: white;
+  background-color: #07011c;
+  box-shadow: 0px 0px 3px 2px #3d0be1;
 }
 
 #desc {
@@ -77,6 +82,8 @@ textarea {
 
 .btn {
   border: 1px solid black;
+  background-color: #0c022e;
+  color: white;
   padding: 5px 25px;
   margin: 7px 5px;
   width: 140px;
@@ -84,6 +91,7 @@ textarea {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  box-shadow: 0px 0px 3px 2px #3d0be1;
 }
 
 #submit:hover {
@@ -103,7 +111,10 @@ textarea {
 }
 
 .btn-card {
+  box-shadow: 0px 0px 3px 2px #3d0be1;
   border: 1px solid black;
+  background-color: #0c022e;
+  color: white;
   padding: 5px 25px;
   margin: 7px 5px;
   text-align: center;
@@ -113,11 +124,13 @@ textarea {
 }
 
 .todo-card-title {
+  text-transform: capitalize;
   margin: 7px 7px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .todo-card-desc {
+  text-transform: capitalize;
   margin: 7px 3px;
-  font-size: 25px;
+  font-size: 18px;
 }
